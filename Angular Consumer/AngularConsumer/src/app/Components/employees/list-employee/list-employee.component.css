@@ -1,3 +1,8 @@
 kendo-grid-column{
     text-align: center;
 }
+button.btn-secondary,
+button.btn-primary,
+button.btn-danger {
+  margin-right: 0.5px;
+}

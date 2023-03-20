@@ -9,11 +9,12 @@
             <kendo-grid-column field="name" title="Name" class="text-center"> </kendo-grid-column>
             <kendo-grid-column field="address" title="Address" class="text-center"></kendo-grid-column>
             <kendo-grid-column field="title" title="Title" class="text-center"> </kendo-grid-column>
-            <kendo-grid-column field="age" title="Age" class="text-center">
+            <kendo-grid-column field="age" title="Age" class="text-center"> </kendo-grid-column>
+            <kendo-grid-column  title="Ops">
                 <ng-template kendoGridCellTemplate let-dataItem title="Ops">
-                    <button (click)="showEmployeeDetails(dataItem)" class="btn btn-secondary mx-1">Details</button>
-                    <button (click)="showEmployeeDetails(dataItem)" class="btn btn-primary mx-1">Edit</button>
-                    <button (click)="deleteEmployee(dataItem)" class="btn btn-danger mx-1">Delete</button>
+                    <button (click)="showEmployeeDetails(dataItem)" class="btn btn-secondary">Details</button>
+                    <button (click)="showEmployeeDetails(dataItem)" class="btn btn-primary">Edit</button>
+                    <button (click)="deleteEmployee(dataItem)" class="btn btn-danger">Delete</button>
                 </ng-template>
                   
             </kendo-grid-column>
