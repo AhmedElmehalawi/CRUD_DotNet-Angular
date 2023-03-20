@@ -50,7 +50,7 @@ namespace API.Controllers
             {
                 Name = empDto.Name,
                 Address = empDto.Address,
-                Title = empDto.Address,
+                Title = empDto.Title,
                 Age = empDto.Age
             };
 
