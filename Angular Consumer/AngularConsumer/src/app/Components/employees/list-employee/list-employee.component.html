@@ -2,7 +2,7 @@
     <h2 class="text-muted">Employees</h2>
 </div>
 <div class="table-responsive d-flex flex-wrap flex-column align-content-center">
-    <!-- <button class="btn btn-success me-auto" [routerLink]="['/incidents/add']">New Incident</button> -->
+    <button class="btn btn-success me-auto" [routerLink]="['/employees/add']">New Employee</button>
 
     <div class="w-75 mb-5">
         <kendo-grid  *ngIf="employees.length>0" [kendoGridBinding]="employees" class="mt-2 text-center" [resizable]="true" [filterable]="true" [sortable]="true" [columnMenu]="true" [reorderable]="true" [pageSize]="5" [pageable]="true">
@@ -13,7 +13,7 @@
             <kendo-grid-column  title="Ops">
                 <ng-template kendoGridCellTemplate let-dataItem title="Ops">
                     <button (click)="showEmployeeDetails(dataItem)" class="btn btn-secondary">Details</button>
-                    <button (click)="showEmployeeDetails(dataItem)" class="btn btn-primary">Edit</button>
+                    <button (click)="editEmployee(dataItem)" class="btn btn-primary">Edit</button>
                     <button (click)="deleteEmployee(dataItem)" class="btn btn-danger">Delete</button>
                 </ng-template>
                   

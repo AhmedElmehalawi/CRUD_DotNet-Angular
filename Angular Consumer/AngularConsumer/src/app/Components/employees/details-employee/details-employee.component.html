@@ -1,10 +1,19 @@
-<div *ngIf="selectedEmployee" class="employee-details-container">
+<!-- <div *ngIf="selectedEmployee" class="employee-details-container">
     <h2>Employee Details</h2>
     <p>Name: {{selectedEmployee.name}}</p>
     <p>Age: {{selectedEmployee.age}}</p>
-    <p>Department: {{selectedEmployee.address}}</p>
-    <p>Salary: {{selectedEmployee.title}}</p>
-  </div>
+    <p>Address: {{selectedEmployee.address}}</p>
+    <p>Title: {{selectedEmployee.title}}</p>
+  </div> -->
 
   
-  
+<div id="employee-details-container" class="mt-5">
+    <div *ngIf="selectedEmployee" class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">{{selectedEmployee.name}}</div>
+        <div class="card-body">
+          <h5 class="card-title">Title: {{selectedEmployee.title}}</h5>
+          <p class="card-text">Age: {{selectedEmployee.age}}</p>
+          <p class="card-text">Address: {{selectedEmployee.address}}</p>
+        </div>
+      </div>
+</div>

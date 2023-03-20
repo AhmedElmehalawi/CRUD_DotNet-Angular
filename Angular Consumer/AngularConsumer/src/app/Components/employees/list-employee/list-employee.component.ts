@@ -22,7 +22,11 @@ export class ListEmployeeComponent implements OnInit, OnChanges {
   }
 
   showEmployeeDetails(emp: Employee) {
-    this.router.navigateByUrl(`details`);
+    this.router.navigateByUrl(`/employees/details`);
+    this.empService.selectedEmployee = emp
+  }
+  editEmployee(emp: Employee) {
+    this.router.navigateByUrl(`/employees/edit`);
     this.empService.selectedEmployee = emp
   }
   
